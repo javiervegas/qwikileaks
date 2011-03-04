@@ -141,6 +141,7 @@ function qwiki(q) {
 }
 
 $(function() {
-	$('#search').val("Snake oil");
-	qwiki("Snake oil");
+     var default_search = 'bacon';
+	$('#search').val(default_search);
+	qwiki(default_search);
 });
