@@ -1,5 +1,4 @@
-<script src="http://www.google.com/jsapi" type="text/javascript"></script> 
-<script type="text/javascript"> 
+ 
 var timer = null;
 
 function search() {
@@ -145,4 +144,3 @@ $(function() {
 	$('#search').val("Snake oil");
 	qwiki("Snake oil");
 });
-</script>
