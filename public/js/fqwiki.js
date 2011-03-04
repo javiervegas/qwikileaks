@@ -1,3 +1,4 @@
+<script src="http://www.google.com/jsapi" type="text/javascript"></script> 
 <script type="text/javascript"> 
 var timer = null;
 
