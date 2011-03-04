@@ -138,6 +138,7 @@ function qwiki(q) {
 	$('#results').html('');
 	clearTimeout(timer);
 	$(document.body).append('<script src="http://en.wikipedia.org/w/api.php?format=json&action=query&prop=revisions&titles='+(q)+'&rvprop=content&rvsection=0&callback=wikiabstract"><\/script>');
+	$(document.body).append('<script src="http://cablesearch.org/cable/api/search?q=mubarak&jsonp=cablesearch"><\/script>');
 }
 
 $(function() {
