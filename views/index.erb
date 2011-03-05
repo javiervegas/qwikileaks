@@ -1,14 +1,12 @@
   <script type="text/javascript" charset="utf-8">
       var app = $.sammy(function() {
-        this.get('#!/Cucumber', function() {
-          var default_search = 'Cucumber';
+        this.get('#!/<%= @term %>', function() {
+          var default_search = '<%= @term %>';
 	      $('#search').val(default_search);
 	      qwiki(default_search);
         });
       });
-      $(function() {
         app.run()
-      });
   </script>
 
 <div style="width: 800px; margin-left: auto; margin-right: auto;">
