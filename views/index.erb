@@ -2,11 +2,11 @@
     ;(function($) {
       var app = $.sammy(function() {
 
-        this.get('#/', function() {
+        this.get('#!/', function() {
           $('#main').text('');
         });
 
-        this.get('#/test', function() {
+        this.get('#!/test', function() {
           $('#main').text('Hello World');
         });
 
@@ -19,8 +19,8 @@
   </script>
 
 <ul id="link">
-   <li><a href="#/test">Click me!</a></li>
-   <li><a href="#/">Back</a></li>
+   <li><a href="#!/test">Click me!</a></li>
+   <li><a href="#!/">Back</a></li>
 </ul>
 <div id="main"></div>
 <div style="width: 800px; margin-left: auto; margin-right: auto;">
