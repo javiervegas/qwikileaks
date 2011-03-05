@@ -1,18 +1,23 @@
   <script type="text/javascript" charset="utf-8">
       var app = $.sammy(function() {
         this.get('#!/:term', function() {
-          var default_search = this.params['term'];
-	      $('#search').val(default_search);
-	      qwiki(default_search);
+          var term = this.params['term'];
+	      $('#search').val(term);
+	      qwiki(encodeURIComponent(term));
+        });
+        this.post('#!/search', function(context) {
+          context.redirect('#!/'+this.params['term']);
         });
       });
-        app.run()
+      app.run()
   </script>
 
 <div style="width: 800px; margin-left: auto; margin-right: auto;">
   <div style="height: 60px;"><h1 style="position: absolute; top: -20px;">qwikileaks.net</h1></div>
   <div style="position: absolute; top: 15px; left: 550px;">
-    <input onkeyup="if(event.keyCode=='13') search();" style="font-size: 20px;" id="search" /> <button onclick="search();" id="sbutton">search</button>
+    <form action="#!/search" method="post">
+      <input type="text" style="font-size: 20px;" id="search" name="term"/> <button id="sbutton">search</button>
+    </form>  
     <div id="results"></div>
   </div>
 </div>
