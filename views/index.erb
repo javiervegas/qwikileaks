@@ -1,7 +1,7 @@
   <script type="text/javascript" charset="utf-8">
       var app = $.sammy(function() {
-        this.get('#!/<%= @term %>', function() {
-          var default_search = '<%= @term %>';
+        this.get('#!/:term', function() {
+          var default_search = this.params['term'];
 	      $('#search').val(default_search);
 	      qwiki(default_search);
         });

@@ -5,11 +5,9 @@ class Sinatra::Application
 end
 
 get "/" do
-  redirect '/q/#!/Cheese'
+  redirect '/q/#!/Coffee'
 end
 
 get '/q/' do
-    puts request.inspect
-    @term = 'Cheese'
     erb :index
 end
