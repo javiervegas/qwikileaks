@@ -5,7 +5,7 @@ class Sinatra::Application
 end
 
 get "/" do
-  redirect '/q/#!/flower'
+  redirect '/q/#!/Flower'
 end
 
 get '/q/' do

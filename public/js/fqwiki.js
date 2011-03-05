@@ -141,8 +141,3 @@ function qwiki(q) {
 	$(document.body).append('<script src="http://cablesearch.org/cable/api/search?q=mubarak&jsonp=cablesearch"><\/script>');
 }
 
-$(function() {
-     var default_search = 'bacon';
-	$('#search').val(default_search);
-	qwiki(default_search);
-});
