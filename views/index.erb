@@ -1,8 +1,7 @@
   <script type="text/javascript" charset="utf-8">
-    ;(function($) {
       var app = $.sammy(function() {
-        this.get('#!/Flower', function() {
-          var default_search = 'Flower';
+        this.get('#!/Cucumber', function() {
+          var default_search = 'Cucumber';
 	      $('#search').val(default_search);
 	      qwiki(default_search);
         });
@@ -10,7 +9,6 @@
       $(function() {
         app.run()
       });
-    })(jQuery);
   </script>
 
 <div style="width: 800px; margin-left: auto; margin-right: auto;">
