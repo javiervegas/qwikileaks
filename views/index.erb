@@ -1,12 +1,15 @@
   <script type="text/javascript" charset="utf-8">
       var app = $.sammy(function() {
+        this.get('', function(context) {
+          context.redirect('#!/Putin');
+        });
         this.get('#!/:term', function() {
           var term = this.params['term'];
 	      $('#search').val(term);
 	      qwiki(encodeURIComponent(term));
         });
         this.post('#!/search', function(context) {
-          context.redirect('#!/'+this.params['term']);
+          context.redirect('#!/'+encodeURIComponent(this.params['term']));
         });
       });
       app.run()
