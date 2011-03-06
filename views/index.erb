@@ -1,9 +1,7 @@
   <script type="text/javascript" charset="utf-8">
       var app = $.sammy(function() {
-        this.get('', function(context) {
-          context.redirect('#!/Putin');
-        });
         this.get('#!/:term', function() {
+          $('#start').hide();
           var term = this.params['term'];
 	      $('#search').val(term);
 	      qwiki(encodeURIComponent(term));
