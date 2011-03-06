@@ -1,0 +1,21 @@
+%h1 qwikileaks.net
+<form action="#!/search" method="post">
+<input type="text" style="font-size: 20px;" id="search" name="term"/> <button id="sbutton">search</button>
+</form>
+%results 
+%start
+  <a href="#!/Berlusconi">Berlusconi</a>
+  <a href="#!/Sarkozy">Sarkozy</a>
+  <a href="#!/Putin">Putin</a>
+  <a href="#!/Gadaffi">Gaddafi</a>
+  <a href="#!/Mubarak">Mubarak</a>
+%searchcontrol Loading
+%images 
+  .images_slide Loading
+  .images_slide Loading
+%abstract
+  .sentence Loading...
+  .sentence Loading...
+%voice
+  <iframe onload="if(loaded){ timer = setTimeout('consume()', 9000); }" id="voice"></iframe>
+

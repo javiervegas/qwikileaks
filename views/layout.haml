@@ -1,0 +1,26 @@
+!!! 5
+%html
+  %head
+    %title qwikileaks.net
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script src="/js/sammy-latest.min.js"></script>
+    <script src="http://www.google.com/jsapi" type="text/javascript"></script> 
+    <script src="/js/qwikileaks.js?v=4" type="text/javascript"></script> 
+    <script src="/js/fqwiki.js?v=6" type="text/javascript"></script> 
+    <link href='http://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
+    <link href='/stylesheet.css' rel='stylesheet' type='text/css'>
+    :javascript
+      var app = $.sammy(function() {
+      this.get('#!/:term', function() {
+      $('#start').hide();
+      var term = this.params['term'];
+      $('#search').val(term);
+      qwiki(encodeURIComponent(term));
+      });
+      this.post('#!/search', function(context) {
+      context.redirect('#!/'+encodeURIComponent(this.params['term']));
+      });
+      });
+      app.run()
+  %body
+    = yield
