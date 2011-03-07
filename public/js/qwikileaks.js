@@ -18,7 +18,7 @@ var app = $.sammy(function() {
     }).play;
     var term = this.params['term'];
     $('#search').val(term);
-    qwiki(encodeURIComponent(term));
+    cablesearch(encodeURIComponent(term));
     $('#spinner').hide();
   });
   this.post('#!/search', function(context) {
@@ -52,7 +52,7 @@ function draw()
 }
 
 
-function qwiki(q) {
+function cablesearch(q) {
 	$('#results').html('');
 	clearTimeout(timer);
 	src = mock_mode?"/json/search.json":'https://www.googleapis.com/customsearch/v1?key=AIzaSyCmmCUH9YYgjb0tVoE4PBz-zITLdueYTDY&cx=016894559323830144684:psimmjsuxr4&q='+(q)+'&callback=cablegrab';
