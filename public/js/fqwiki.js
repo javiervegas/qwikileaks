@@ -30,16 +30,22 @@ function imagesDone(sc, searcher) {
 	slide = '<div class="images_slide">';
 	if ( searcher.results && searcher.results.length > 0) {
 		results = searcher.results;
-		//console.log(searcher.results[0]);
-		try {
-          for(var i=0; i<4; i++) {
-			var result = searcher.results[i];
+        var canvas = document.getElementById('photoCanvas');
+        ctx= canvas.getContext("2d");
+        for(var i=0; i<4; i++) {
+		  var result = searcher.results[i];
+		  try {
+            if (ctx) {
+              var image = new Image();
+			  image.src = result['tbUrl'];
+              ctx.drawImage(image,i*200,0);
+            }
 			slide += '<div class="img">';	
 			slide += '<div class="caption">' + result['title'] + '</div>';
 			slide += '<img src="' + result['tbUrl'] + '" />'
 			slide += '</div>'
-          }
-		} catch (e) {}
+		  } catch (e) {alert(e)}
+        }
 	}
 	document.getElementById('images').innerHTML += slide + '</div>';
 	$('.images_slide:first').remove();
