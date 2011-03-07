@@ -29,7 +29,7 @@ function cablegrab(r) {
 }
 
 // target frames per second
-const FPS = 30;
+const FPS = 320;
 var x = 0;
 var canvas = null;
 var context2D = null;
@@ -49,8 +49,7 @@ function draw()
 	for(var i=0; i<images.length; i++) {
         var image = images[i];
         var pos =  x-150*i;
-        app.log(i+" "+pos);
         context2D.drawImage(image, pos, 0);
      } 
-	x += 1;
+	x++;
 }
