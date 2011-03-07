@@ -82,8 +82,10 @@ function consume() {
 		abstract = '';
 	}
 	app.log(chunk);
+	document.getElementById('voice').src = '/sound/neospeech.mpeg';
+	//document.getElementById('voice').rel="noreferrer";
 	//document.getElementById('voice').src = 'http://translate.google.com/translate_tts?tl=en&q=' + encodeURIComponent(chunk);
-     document.getElementById('voice').src = 'http://www.neospeech.com/GetAudio1.ashx?speaker=103&content='+encodeURIComponent(chunk);
+     //document.getElementById('voice').src = 'http://www.neospeech.com/GetAudio1.ashx?speaker=103&content='+encodeURIComponent(chunk);
 	GetImages(chunk);
 
 	$('.sentence:first').remove();
