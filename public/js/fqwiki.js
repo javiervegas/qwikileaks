@@ -107,32 +107,5 @@ function result(r) {
 	consume();
 }
 
-function wikiabstract(r) {
-	loaded = true;
-	var rev = 0;
-	for(key in r.query.pages)
-		rev = key
-	abstract = r.query.pages[rev].revisions[0]['*'];
-	//console.log(abstract);
-	// Holy bejeesus this is an insane bunch of regexes...
-	abstract = (abstract.replace(/{{[^]*?({{[^{}]*?}}[^]*?)*}}/g,'').replace(/{{[^]*?}}/g,'').replace(/\[\[[^:\]]*:[^\]]*?\]\]/g,'').replace(/\([^]*?\)/g,'').replace(/<ref[^]*?\/ref>/g,'').replace(/<ref[^>]*\/>/g,'').replace(/\[\[[^\]]*?\|/g,'[[').replace(/'''?/g,'').replace(/\n/g,'').replace(/\*/g,'').replace(/<!--.*-->/g,''))
-	
-	//console.log(abstract);
-	// Sanitizing out what would be search terms
-	abstract = abstract.replace(/(\[\[|\]\])/g,'')
-	consume();
 
-}
-
-// Get the wikipedia abstract
-//var q = "select distinct ?abstract WHERE {<http://dbpedia.org/resource/Megan_Fox> dbpedia-owl:abstract ?abstract . FILTER langMatches( lang(?abstract), 'en' )}";
-//document.write('<script src="http://dbpedia.org/sparql?query='+escape(q)+'&format=application/sparql-results%2Bjsonp&callback=result"><\/script>');
-
-function qwiki(q) {
-	$('#results').html('');
-	clearTimeout(timer);
-	//$(document.body).append('<script src="http://en.wikipedia.org/w/api.php?format=json&action=query&prop=revisions&titles='+(q)+'&rvprop=content&rvsection=0&callback=wikiabstract"><\/script>');
-	//$(document.body).append('<script src="https://www.googleapis.com/customsearch/v1?key=AIzaSyCmmCUH9YYgjb0tVoE4PBz-zITLdueYTDY&cx=016894559323830144684:psimmjsuxr4&q='+(q)+'&callback=cablesearch"><\/script>');
-	$(document.body).append('<script src="/json/search.json"><\/script>');
-}
 
