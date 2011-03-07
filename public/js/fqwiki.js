@@ -30,8 +30,6 @@ function imagesDone(sc, searcher) {
 	slide = '<div class="images_slide">';
 	if ( searcher.results && searcher.results.length > 0) {
 		results = searcher.results;
-        canvas = document.getElementById('photoCanvas');
-        context2D= canvas.getContext("2d");
         for(var i=0; i<4; i++) {
 		  var result = searcher.results[i];
 		  try {
@@ -42,8 +40,7 @@ function imagesDone(sc, searcher) {
       		if (context2D) {
                 var image = new Image();
 			  image.src = result['tbUrl'];
-                //context2D.drawImage(image,i*200,0);
-                setInterval(draw(image,i), 1000 / FPS);
+                images.push(image);
               }
 		  } catch (e) {}
         }
@@ -88,7 +85,7 @@ function consume() {
 	} else {
 		abstract = '';
 	}
-	app.log(chunk);
+	//app.log(chunk);
 	document.getElementById('voice').src = '/sound/neospeech.mpeg';
 	//document.getElementById('voice').rel="noreferrer";
 	//document.getElementById('voice').src = 'http://translate.google.com/translate_tts?tl=en&q=' + encodeURIComponent(chunk);
