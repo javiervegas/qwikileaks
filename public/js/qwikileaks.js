@@ -39,7 +39,8 @@ function cablesearch(r) {
   //app.log(cable.title);
   //app.log(snippet);
   var link=cable.link.replace(/.*\/(.*)\.html/,'$1');
-  $(document.body).append('<script src="http://cablesearch.org/cable/api/cable?id='+(link)+'&jsonp=cablegrab"><\/script>');
+  src = mock_mode?"/json/cable.json":'http://cablesearch.org/cable/api/cable?id='+(link)+'&jsonp=cablegrab';
+  $(document.body).append('<script src="'+src+'"><\/script>');
 }
 
 function cablegrab(r) {
