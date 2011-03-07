@@ -1,3 +1,31 @@
+var spinner = null;
+var app = $.sammy(function() {
+  this.get('#!', function() {
+    $('#start').show();
+    $('#spinner').hide();
+  });
+  this.get('#!/:term', function() {
+    $('#start').hide();
+    $('#spinner').show();
+    spinner =  new Spinner('spinner', {
+      radii:     [42, 62],
+      color:     '#ed145b',
+      dashWidth: 1.8,
+      dashes:    75,
+      padding: 3,
+      opacity:   .8,
+      speed:     .7
+    }).play;
+    var term = this.params['term'];
+    $('#search').val(term);
+    qwiki(encodeURIComponent(term));
+    $('#spinner').hide();
+  });
+  this.post('#!/search', function(context) {
+    context.redirect('#!/'+encodeURIComponent(this.params['term']));
+  });
+});
+
 var mock_mode = true;
 
 var canvas = null;
