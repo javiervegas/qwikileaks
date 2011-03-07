@@ -29,18 +29,18 @@ function cablegrab(r) {
 }
 
 // target frames per second
-const FPS = 30;
+const FPS = 300;
 var x = 0;
 var y = 0;
-var xDirection = 1;
+var xDirection = 10;
 var yDirection = 1;
 var canvas = null;
 var context2D = null;
 
-function draw()
+function draw(image,i)
 {
-	context2D.clearRect(0, 0, canvas.width, canvas.height);
-	context2D.drawImage(image, x, y);
+	//context2D.clearRect(0, 0, canvas.width, canvas.height);
+	context2D.drawImage(image, x+200*i, y);
 	x += 1 * xDirection;
 	y += 1 * yDirection;
 	

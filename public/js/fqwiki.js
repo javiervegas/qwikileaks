@@ -42,7 +42,8 @@ function imagesDone(sc, searcher) {
       		if (context2D) {
                 var image = new Image();
 			  image.src = result['tbUrl'];
-                context2D.drawImage(image,i*200,0);
+                //context2D.drawImage(image,i*200,0);
+                setInterval(draw(image,i), 1000 / FPS);
               }
 		  } catch (e) {}
         }
