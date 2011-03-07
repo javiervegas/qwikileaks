@@ -28,19 +28,16 @@ function cablegrab(r) {
   consume();
 }
 
-// target frames per second
-const FPS = 320;
-var x = 0;
 var canvas = null;
 var context2D = null;
+var x = 0;
 var images = new Array();
 
 window.onload = init;
-function init()
-{
-    	canvas = document.getElementById('photoCanvas');
-	context2D = canvas.getContext('2d');
-	setInterval(draw, 1000 / FPS);
+function init() {
+  canvas = document.getElementById('photoCanvas');
+  context2D = canvas.getContext('2d');
+  setInterval(draw, 50);
 }
         
 function draw()
@@ -48,7 +45,7 @@ function draw()
 	context2D.clearRect(0, 0, canvas.width, canvas.height);
 	for(var i=0; i<images.length; i++) {
         var image = images[i];
-        var pos =  x-150*i;
+        var pos =  4*x+400-150*i;
         context2D.drawImage(image, pos, 0);
      } 
 	x++;
