@@ -32,29 +32,13 @@ function imagesDone(sc, searcher) {
 		results = searcher.results;
 		//console.log(searcher.results[0]);
 		try {
-			var result = searcher.results[0];
+          for(var i=0; i<4; i++) {
+			var result = searcher.results[i];
 			slide += '<div class="img">';	
 			slide += '<div class="caption">' + result['title'] + '</div>';
 			slide += '<img src="' + result['tbUrl'] + '" />'
 			slide += '</div>'
-
-			var result = searcher.results[1];
-			slide += '<div class="img">';	
-			slide += '<div class="caption">' + result['title'] + '</div>';
-			slide += '<img src="' + result['tbUrl'] + '" />'
-			slide += '</div>'
-
-			var result = searcher.results[2];
-			slide += '<div class="img">';	
-			slide += '<div class="caption">' + result['title'] + '</div>';
-			slide += '<img src="' + result['tbUrl'] + '" />'
-			slide += '</div>'
-
-			var result = searcher.results[3];
-			slide += '<div class="img">';	
-			slide += '<div class="caption">' + result['title'] + '</div>';
-			slide += '<img src="' + result['tbUrl'] + '" />'
-			slide += '</div>'
+          }
 		} catch (e) {}
 	}
 	document.getElementById('images').innerHTML += slide + '</div>';
