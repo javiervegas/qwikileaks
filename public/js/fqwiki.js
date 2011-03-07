@@ -35,16 +35,16 @@ function imagesDone(sc, searcher) {
         for(var i=0; i<4; i++) {
 		  var result = searcher.results[i];
 		  try {
-            if (ctx) {
-              var image = new Image();
-			  image.src = result['tbUrl'];
-              ctx.drawImage(image,i*200,0);
-            }
 			slide += '<div class="img">';	
 			slide += '<div class="caption">' + result['title'] + '</div>';
 			slide += '<img src="' + result['tbUrl'] + '" />'
 			slide += '</div>'
-		  } catch (e) {alert(e)}
+      		if (ctx) {
+                var image = new Image();
+			  image.src = result['tbUrl'];
+                ctx.drawImage(image,i*200,0);
+              }
+		  } catch (e) {}
         }
 	}
 	document.getElementById('images').innerHTML += slide + '</div>';
