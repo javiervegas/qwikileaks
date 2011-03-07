@@ -1,3 +1,27 @@
+var mock_mode = true;
+
+var canvas = null;
+var context2D = null;
+var x = 0;
+var images = new Array();
+
+window.onload = init;
+function init() {
+  canvas = document.getElementById('photoCanvas');
+  context2D = canvas.getContext('2d');
+  setInterval(draw, 50);
+}
+        
+function draw()
+{
+	context2D.clearRect(0, 0, canvas.width, canvas.height);
+	for(var i=0; i<images.length; i++) {
+        var image = images[i];
+        var pos =  4*x+400-150*i;
+        context2D.drawImage(image, pos, 0);
+     } 
+	x++;
+}
 
 
 function qwiki(q) {
@@ -26,27 +50,4 @@ function cablegrab(r) {
   abstract = abstract.substring(abstract.indexOf("SUBJECT"),abstract.length);
   //app.log(abstract);
   consume();
-}
-
-var canvas = null;
-var context2D = null;
-var x = 0;
-var images = new Array();
-
-window.onload = init;
-function init() {
-  canvas = document.getElementById('photoCanvas');
-  context2D = canvas.getContext('2d');
-  setInterval(draw, 50);
-}
-        
-function draw()
-{
-	context2D.clearRect(0, 0, canvas.width, canvas.height);
-	for(var i=0; i<images.length; i++) {
-        var image = images[i];
-        var pos =  4*x+400-150*i;
-        context2D.drawImage(image, pos, 0);
-     } 
-	x++;
 }
