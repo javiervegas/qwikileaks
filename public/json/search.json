@@ -1,0 +1,141 @@
+cablesearch({
+ "kind": "customsearch#search",
+ "url": {
+  "type": "application/json",
+  "template": "https://www.googleapis.com/customsearch/v1?q\u003d{searchTerms}&num\u003d{count?}&start\u003d{startIndex?}&hr\u003d{language?}&safe\u003d{safe?}&cx\u003d{cx?}&cref\u003d{cref?}&sort\u003d{sort?}&alt\u003djson"
+ },
+ "queries": {
+  "nextPage": [
+   {
+    "title": "Google Custom Search - Putin",
+    "totalResults": 238,
+    "searchTerms": "Putin",
+    "count": 10,
+    "startIndex": 11,
+    "inputEncoding": "utf8",
+    "outputEncoding": "utf8",
+    "safe": "off",
+    "cx": "016894559323830144684:psimmjsuxr4"
+   }
+  ],
+  "request": [
+   {
+    "title": "Google Custom Search - Putin",
+    "totalResults": 238,
+    "searchTerms": "Putin",
+    "count": 10,
+    "startIndex": 1,
+    "inputEncoding": "utf8",
+    "outputEncoding": "utf8",
+    "safe": "off",
+    "cx": "016894559323830144684:psimmjsuxr4"
+   }
+  ]
+ },
+ "context": {
+  "title": "qwikileaks"
+ },
+ "items": [
+  {
+   "kind": "customsearch#result",
+   "title": "MOSCOW 03265 - Cable Viewer",
+   "htmlTitle": "MOSCOW 03265 - Cable Viewer",
+   "link": "http://www.wikileaks.ch/cable/2008/11/08MOSCOW3343.html",
+   "displayLink": "www.wikileaks.ch",
+   "snippet": "Putin's address to United Russia on November 20, which will be televised on ...   Yet, Mukhin saw the aggressive language primarily as a sop to Putin and the ...",
+   "htmlSnippet": "\u003cb\u003ePutin&#39;s\u003c/b\u003e address to United Russia on November 20, which will be televised on \u003cb\u003e...\u003c/b\u003e \u003cbr\u003e  Yet, Mukhin saw the aggressive language primarily as a sop to \u003cb\u003ePutin\u003c/b\u003e and the \u003cb\u003e...\u003c/b\u003e",
+   "cacheId": "4HeCeTUcl48J"
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "PUTIN, PIKALEVO, AND THE FAILURE OF THE POWER - Cable Viewer",
+   "htmlTitle": "\u003cb\u003ePUTIN\u003c/b\u003e, PIKALEVO, AND THE FAILURE OF THE POWER - Cable Viewer",
+   "link": "http://www.wikileaks.ch/cable/2009/06/09MOSCOW1562.html",
+   "displayLink": "www.wikileaks.ch",
+   "snippet": "(C) Putin's intervention in Pikalevo also raised questions about balance of   power within the tandem. XXXXXXXXXXXX asked why Putin, and not Medvedev, ...",
+   "htmlSnippet": "(C) \u003cb\u003ePutin&#39;s\u003c/b\u003e intervention in Pikalevo also raised questions about balance of \u003cbr\u003e  power within the tandem. XXXXXXXXXXXX asked why \u003cb\u003ePutin\u003c/b\u003e, and not Medvedev, \u003cb\u003e...\u003c/b\u003e",
+   "cacheId": "7eK398kHICQJ"
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "PUTIN STILL HOLDING THE REINS FOR 2012 ELECTION - Cable Viewer",
+   "htmlTitle": "\u003cb\u003ePUTIN\u003c/b\u003e STILL HOLDING THE REINS FOR 2012 ELECTION - Cable Viewer",
+   "link": "http://www.wikileaks.ch/cable/2010/02/10MOSCOW272.html",
+   "displayLink": "www.wikileaks.ch",
+   "snippet": "(C) Zverev stated that Putin is in total control of the situation and that he   had no other option than to remain in a position of power, but not necessarily   ...",
+   "htmlSnippet": "(C) Zverev stated that \u003cb\u003ePutin\u003c/b\u003e is in total control of the situation and that he \u003cbr\u003e  had no other option than to remain in a position of power, but not necessarily \u003cbr\u003e  \u003cb\u003e...\u003c/b\u003e",
+   "cacheId": "CKLbWIFwgXcJ"
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "READING PUTIN'S - Cable Viewer",
+   "htmlTitle": "READING \u003cb\u003ePUTIN&#39;S\u003c/b\u003e - Cable Viewer",
+   "link": "http://wikileaks.ch/cable/2008/04/08MOSCOW1215.html",
+   "displayLink": "wikileaks.ch",
+   "snippet": "(C) Summary: Among some Kremlin-critics and establishment figures, speculation   has grown over the past month that Putin and his entourage may be laying the ...",
+   "htmlSnippet": "(C) Summary: Among some Kremlin-critics and establishment figures, speculation \u003cbr\u003e  has grown over the past month that \u003cb\u003ePutin\u003c/b\u003e and his entourage may be laying the \u003cb\u003e...\u003c/b\u003e",
+   "cacheId": "sJrJqKLRLvkJ"
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "MEDVEDEV LOSES OUT IN RUSSIA-GEORGIA WAR - Cable Viewer",
+   "htmlTitle": "MEDVEDEV LOSES OUT IN RUSSIA-GEORGIA WAR - Cable Viewer",
+   "link": "http://www.wikileaks.ch/cable/2008/08/08MOSCOW2563.html",
+   "displayLink": "www.wikileaks.ch",
+   "snippet": "Putin, not Medvedev, made the first strong public Russian address on the   conflict ... He also went as far as indirect criticism of Putin's attack on the   ...",
+   "htmlSnippet": "\u003cb\u003ePutin\u003c/b\u003e, not Medvedev, made the first strong public Russian address on the \u003cbr\u003e  conflict \u003cb\u003e...\u003c/b\u003e He also went as far as indirect criticism of \u003cb\u003ePutin&#39;s\u003c/b\u003e attack on the \u003cbr\u003e  \u003cb\u003e...\u003c/b\u003e",
+   "cacheId": "0J_6DdvXJpoJ"
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "PUTIN-SAAKASHVILI MEETING OFF, LEAVING LITTLE - Cable Viewer",
+   "htmlTitle": "\u003cb\u003ePUTIN\u003c/b\u003e-SAAKASHVILI MEETING OFF, LEAVING LITTLE - Cable Viewer",
+   "link": "http://www.wikileaks.ch/cable/2006/07/06MOSCOW7863.html",
+   "displayLink": "www.wikileaks.ch",
+   "snippet": "(C) Georgian President Saakashvili will not meet President Putin in Moscow at   the July 21-22 informal CIS Summit. Both sides agreed to announce they would ...",
+   "htmlSnippet": "(C) Georgian President Saakashvili will not meet President \u003cb\u003ePutin\u003c/b\u003e in Moscow at \u003cbr\u003e  the July 21-22 informal CIS Summit. Both sides agreed to announce they would \u003cb\u003e...\u003c/b\u003e",
+   "cacheId": "91yHOJXyzyUJ"
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Cable Viewer",
+   "htmlTitle": "Cable Viewer",
+   "link": "http://www.wikileaks.ch/cable/2004/12/04HELSINKI1603.html",
+   "displayLink": "www.wikileaks.ch",
+   "snippet": "(C) Presidents Halonen and Putin meet roughly once a year to discuss ... On   Chechnya, Putin said he was sick and tired of being told there must be a ...",
+   "htmlSnippet": "(C) Presidents Halonen and \u003cb\u003ePutin\u003c/b\u003e meet roughly once a year to discuss \u003cb\u003e...\u003c/b\u003e On \u003cbr\u003e  Chechnya, \u003cb\u003ePutin\u003c/b\u003e said he was sick and tired of being told there must be a \u003cb\u003e...\u003c/b\u003e",
+   "cacheId": "Hze0HfDmdPgJ"
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Cable Viewer",
+   "htmlTitle": "Cable Viewer",
+   "link": "http://www.wikileaks.ch/cable/2006/05/06MOSCOW5740.html",
+   "displayLink": "www.wikileaks.ch",
+   "snippet": "XXXXXXXXXXXX agreed, saying that preserving the current balance of power among   competing elite groups was of great importance to Putin. ¶3. ...",
+   "htmlSnippet": "XXXXXXXXXXXX agreed, saying that preserving the current balance of power among \u003cbr\u003e  competing elite groups was of great importance to \u003cb\u003ePutin\u003c/b\u003e. ¶3. \u003cb\u003e...\u003c/b\u003e",
+   "cacheId": "3I2Dbb8BG8MJ"
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "Cable Viewer",
+   "htmlTitle": "Cable Viewer",
+   "link": "http://www.wikileaks.ch/cable/2006/05/06MOSCOW5645.html",
+   "displayLink": "www.wikileaks.ch",
+   "snippet": "(C) Putin thus found himself without a winning strategy and had to develop one.   ... The spring 2005 dismissal of General Viktor Kazantsev, Putin's ...",
+   "htmlSnippet": "(C) \u003cb\u003ePutin\u003c/b\u003e thus found himself without a winning strategy and had to develop one. \u003cbr\u003e  \u003cb\u003e...\u003c/b\u003e The spring 2005 dismissal of General Viktor Kazantsev, \u003cb\u003ePutin&#39;s\u003c/b\u003e \u003cb\u003e...\u003c/b\u003e",
+   "cacheId": "W39AO4-donkJ"
+  },
+  {
+   "kind": "customsearch#result",
+   "title": "REACTION IN MOSCOW - Cable Viewer",
+   "htmlTitle": "REACTION IN MOSCOW - Cable Viewer",
+   "link": "http://www.wikileaks.ch/cable/2006/12/06MOSCOW12751.html",
+   "displayLink": "www.wikileaks.ch",
+   "snippet": "He suggested that Putin could portray Sechin's ouster as the first serious step   in the fight against government corruption, noting, “Putin could credibly ...",
+   "htmlSnippet": "He suggested that \u003cb\u003ePutin\u003c/b\u003e could portray Sechin&#39;s ouster as the first serious step \u003cbr\u003e  in the fight against government corruption, noting, “\u003cb\u003ePutin\u003c/b\u003e could credibly \u003cb\u003e...\u003c/b\u003e",
+   "cacheId": "8_6Q18dEFHYJ"
+  }
+ ]
+}
+);
