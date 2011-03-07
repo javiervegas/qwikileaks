@@ -45,7 +45,7 @@ function draw()
 	context2D.clearRect(0, 0, canvas.width, canvas.height);
 	for(var i=0; i<images.length; i++) {
         var image = images[i];
-        var pos =  4*x+400-150*i;
+        var pos =  4*x+40-150*i;
         context2D.drawImage(image, pos, 0);
      } 
 	x++;
