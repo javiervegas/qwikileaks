@@ -26,7 +26,7 @@ var app = $.sammy(function() {
   });
 });
 
-var mock_mode = true;
+var mock_mode = false;
 
 var canvas = null;
 var context2D = null;
@@ -60,18 +60,18 @@ function qwiki(q) {
 }
 
 
-function cablesearch(r) {
+function cablegrab(r) {
   loaded = true;
   var cable = r.items[0];
   snippet = cable.snippet;
   //app.log(cable.title);
   //app.log(snippet);
   var link=cable.link.replace(/.*\/(.*)\.html/,'$1');
-  src = mock_mode?"/json/cable.json":'http://cablesearch.org/cable/api/cable?id='+(link)+'&jsonp=cablegrab';
+  src = mock_mode?"/json/cable.json":'http://cablesearch.org/cable/api/cable?id='+(link)+'&jsonp=cableread';
   $(document.body).append('<script src="'+src+'"><\/script>');
 }
 
-function cablegrab(r) {
+function cableread(r) {
   abstract = r.items[0].text;
   //abstract = abstract.replace("\n"," ");
   //abstract = abstract.replace(/\s+/," ");
